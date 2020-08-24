@@ -96,4 +96,5 @@ def text_catch(call):
     bot.reply_to(call.message, message_text)
 
 
+bot.remove_webhook()
 bot.polling()
