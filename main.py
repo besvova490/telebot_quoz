@@ -66,7 +66,6 @@ def quiz(message):
 def definition(message):
     global current_category
     if message.text != '/next':
-        question_box = get_questions(categories.get(message.text, ''))
         current_category = categories.get(message.text, '')
     question_box = get_questions(current_category)
     markup = types.InlineKeyboardMarkup()
